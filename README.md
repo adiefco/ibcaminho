@@ -1,50 +1,111 @@
-# Welcome to your Expo app 👋
+# 📱 IBCaminho App
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+Aplicativo mobile da Igreja Batista do Caminho, desenvolvido para aproximar a comunidade, facilitar o acesso a conteúdos e fortalecer a vida em comunhão.
 
-## Get started
+---
 
-1. Install dependencies
+## ✨ Sobre o projeto
 
-   ```bash
-   npm install
-   ```
+O app foi criado com foco em **simplicidade, acolhimento e autonomia**, permitindo que membros da igreja:
 
-2. Start the app
+- 📅 acompanhem eventos
+- 🙏 enviem pedidos de oração
+- 🎧 acessem conteúdos e playlists
+- 📺 assistam cultos
+- 👤 gerenciem seu perfil
 
-   ```bash
-   npx expo start
-   ```
+---
 
-In the output, you'll find options to open the app in a
+## 🚀 Tecnologias
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+- React Native (Expo)
+- Expo Router
+- Supabase (Auth + Database)
+- Sanity (CMS)
+- TypeScript
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+---
 
-## Get a fresh project
+## 📱 Funcionalidades
 
-When you're ready, run:
+### 🔐 Autenticação
+- Cadastro de usuário
+- Login com e-mail e senha
+- Sessão persistente
+
+### 👤 Perfil
+- Visualização de dados
+- Edição de nome e telefone
+- Logout
+
+### 🙏 Oração
+- Envio de pedidos de oração
+- Opção de envio anônimo
+- Histórico de pedidos
+
+### 📅 Conteúdo dinâmico
+- Eventos da igreja (via CMS)
+- Palavra da semana
+- Informações institucionais
+
+### 🎧 Integrações
+- Playlist do Spotify
+- Vídeos do YouTube
+
+---
+
+## 🧱 Estrutura
+
+O projeto é organizado com **Expo Router**, separando rotas, componentes reutilizáveis, contextos e integrações externas.
+
+- `app/` — telas e rotas do aplicativo
+- `src/components/` — componentes reutilizáveis de UI
+- `src/contexts/` — contextos globais, como autenticação
+- `src/services/` — integrações com Supabase, Sanity, Spotify e YouTube
+
+---
+
+## ⚙️ Rodando localmente
 
 ```bash
-npm run reset-project
+npm install
+npx expo start
 ```
+---
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+## 🌐 Variáveis de ambiente
+Crie um .env com:
 
-## Learn more
+```bash
+EXPO_PUBLIC_SUPABASE_URL=
+EXPO_PUBLIC_SUPABASE_ANON_KEY=
+EXPO_PUBLIC_SANITY_PROJECT_ID=
+EXPO_PUBLIC_SANITY_DATASET=
+```
+---
 
-To learn more about developing your project with Expo, look at the following resources:
+## 🌍 Deploy Web
+Para gerar versão web:
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+```bash
+npx expo export -p web
+```
+Deploy recomendado via Vercel.
 
-## Join the community
+---
 
-Join our community of developers creating universal apps.
+## 💛 Propósito
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+Este projeto foi desenvolvido como uma forma de servir a igreja, criando uma experiência digital acessível, bonita e funcional para todos os membros.
+
+## 🚀 Próximos passos
+- Notificações push
+
+- Upload de foto de perfil
+
+- Confirmação de presença em eventos
+
+- Publicação nas lojas (App Store / Play Store)
+
+## 🤝 Contribuição
+Projeto privado / institucional. Para contribuições, entre em contato com o responsável pelo desenvolvimento.
